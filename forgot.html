@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WANDERLY | Reset Password</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+<div class="travel-background"><div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+<div class="plane"><svg viewBox="0 0 120 60"><path d="M8 32 L65 25 L104 10 L112 13 L76 31 L112 40 L108 44 L67 36 L20 42 Z"/></svg></div>
+<div class="wave wave-one"></div><div class="wave wave-two"></div></div>
+<main class="form-page-wrapper small-page">
+<section class="form-header"><a href="index.html" class="back-link">← Back to login</a><p class="eyebrow">ACCOUNT RECOVERY</p>
+<h1>Forgot your password?</h1><p>Don't worry. We'll help you get back to your journey.</p></section>
+<section class="form-card"><form id="forgotPasswordForm">
+<div id="emailStep"><div class="input-group"><label for="forgotEmail">Gmail</label><input type="email" id="forgotEmail" placeholder="yourname@gmail.com" required></div>
+<button type="submit" class="primary-button">GET CODE <span>→</span></button></div>
+<div id="codeStep" class="hidden"><div class="input-group"><label for="verificationCode">Verification Code</label><input type="text" id="verificationCode" placeholder="Enter 6-digit code" maxlength="6"></div>
+<button type="button" id="verifyCodeButton" class="primary-button">VERIFY CODE <span>→</span></button></div>
+<div id="passwordStep" class="hidden"><div class="input-group"><label for="newPassword">New Password</label><input type="password" id="newPassword" placeholder="New password"></div>
+<div class="input-group"><label for="confirmNewPassword">Confirm Password</label><input type="password" id="confirmNewPassword" placeholder="Confirm password"></div>
+<button type="button" id="resetPasswordButton" class="primary-button">RESET PASSWORD <span>→</span></button></div>
+<p id="forgotMessage" class="form-message"></p>
+</form></section></main>
+<script src="js/forgot-password.js"></script>
+</body></html>
