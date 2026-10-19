@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WANDERLY | Discover</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-page">
+<header class="main-header"><a href="app.html" class="logo">WANDER<span>LY</span></a>
+<nav><a href="#discover">Discover</a><a href="#map">Map</a><a href="#trips">My Trips</a></nav>
+<button id="logoutButton" class="logout-button">Logout</button></header>
+<main>
+<section class="hero-section" id="discover"><div class="hero-content"><p class="eyebrow">YOUR NEXT ADVENTURE</p>
+<h1>Travel somewhere<br><span>worth remembering.</span></h1><p>Find places to visit and people who want to experience them with you.</p></div>
+<div class="search-panel"><div class="search-field"><label>WHERE</label><input id="destinationInput" type="text" placeholder="Tokyo, Osaka, Seoul..."></div>
+<div class="search-field"><label>DATE</label><input id="travelDate" type="date"></div><button id="searchButton" class="primary-button">EXPLORE <span>→</span></button></div></section>
+<section class="section-container"><div class="section-title"><div><p class="eyebrow">DISCOVER</p><h2>Find your travel experience</h2></div>
+<div class="filter-buttons"><button class="filter active" data-gender="all">Everyone</button><button class="filter" data-gender="female">Girls</button><button class="filter" data-gender="male">Boys</button></div></div>
+<div id="travelCards" class="travel-grid"></div></section>
+<section class="map-section" id="map"><div class="map-heading"><p class="eyebrow">EXPLORE THE AREA</p><h2>Discover nearby places</h2><p>Find popular attractions, restaurants and shops around your destination.</p></div>
+<div id="mapContainer"></div></section>
+<section class="section-container" id="trips"><div class="section-title"><div><p class="eyebrow">TRAVEL TOGETHER</p><h2>People going your way</h2></div></div>
+<div id="travelerCards" class="traveler-grid"></div></section>
+</main>
+<script src="js/app.js"></script>
+<!-- Replace YOUR_GOOGLE_MAPS_API_KEY with your restricted Google Maps API key. -->
+<script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script>
+</body></html>
